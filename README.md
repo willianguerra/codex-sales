@@ -1,7 +1,7 @@
 # The Ethiopian Codex — páginas de vendas (EN / ES)
 
 ## Estrutura
-
+ 
 | Caminho | O que é |
 |---|---|
 | `sales-page-EN.html`, `sales-page-ES.html` | Páginas de vendas (geradas) |
