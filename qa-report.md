@@ -6,7 +6,7 @@ Data: 2026-10-08 · Conferido contra `the-ethiopian-codex-EN.pdf` (100 p.) e `th
 
 | # | O que falta | Onde |
 |---|---|---|
-| 1 | Links reais de checkout Hotmart EN e ES | `config.json → EN/ES.checkout_url` |
+| 1 | ~~Links reais de checkout Hotmart EN e ES~~ ✅ `https://pay.hotmart.com/P107944739C` (ES com `?lang=es`) | `config.json → EN/ES.checkout_url` |
 | 2 | Preço principal definido: **$17.99** (EN) / **US$ 17,99** (ES). Confirmar se a Hotmart vai cobrar em dólar no ES ou em moeda local; bump/upsell/downsell ainda provisórios | `config.json → *price` |
 | 3 | Nome da marca e e-mail de suporte (hoje: `The Ethiopian Codex` / `support@example.com`) | `config.json → brand_name, support_email` |
 | 4 | URL do site (para Open Graph e hreflang) | `config.json → site_url` |
