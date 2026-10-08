@@ -78,13 +78,14 @@ module.exports = async function handler(req, res) {
   if (segment) {
     try {
       const props = { unsubscribe_url: unsub };
-      let r = await resend("/contacts", key, { email: email, unsubscribed: false, segments: [{ id: segment }], properties: props });
-      if (!r.ok && r.status !== 429) {
-        // Already a contact (asked again, or unsubscribed earlier): refresh the link and the segment,
-        // but never touch their subscription status.
-        console.warn("free-preview: contact create " + r.status + " " + (await r.text()));
-        const base = "https://api.resend.com/contacts/" + encodeURIComponent(email);
-        const auth = { Authorization: "Bearer " + key, "Content-Type": "application/json" };
+      const base = "https://api.resend.com/contacts/" + encodeURIComponent(email);
+      const auth = { Authorization: "Bearer " + key, "Content-Type": "application/json" };
+      let r = await fetch(base, { headers: auth });
+      if (r.status === 404) {
+        r = await resend("/contacts", key, { email: email, unsubscribed: false, segments: [{ id: segment }], properties: props });
+      } else if (r.ok) {
+        // Already a contact (asked again, or unsubscribed earlier). POST /contacts would upsert and
+        // resubscribe them, so only refresh the link and the segment, never the subscription status.
         r = await fetch(base, { method: "PATCH", headers: auth, body: JSON.stringify({ properties: props }) });
         if (r.ok) r = await fetch(base + "/segments/" + segment, { method: "POST", headers: auth });
       }
