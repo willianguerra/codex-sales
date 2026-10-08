@@ -122,9 +122,12 @@ def head(lang, t, title, description, page):
     site = CFG["site_url"].rstrip("/")
     robots = '<meta name="robots" content="noindex,nofollow">' if CFG.get("noindex") else ""
     alt = ""
+    url = f"{site}/{page}"
     if page.startswith("sales-page"):
-        alt = (f'<link rel="alternate" hreflang="{t["lang"]}" href="{site}/sales-page-{lang}.html">'
-               f'<link rel="alternate" hreflang="{"es" if other == "ES" else "en"}" href="{site}/sales-page-{other}.html">')
+        url = f"{site}/{lang.lower()}"
+        alt = (f'<link rel="canonical" href="{url}">'
+               f'<link rel="alternate" hreflang="{t["lang"]}" href="{url}">'
+               f'<link rel="alternate" hreflang="{"es" if other == "ES" else "en"}" href="{site}/{other.lower()}">')
     return f"""<!doctype html>
 <html lang="{t['lang']}">
 <head>
@@ -141,7 +144,7 @@ def head(lang, t, title, description, page):
 <meta property="og:image" content="{site}/assets/og-{lang}.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:url" content="{site}/{page}">
+<meta property="og:url" content="{url}">
 <meta name="twitter:card" content="summary_large_image">
 {alt}
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='8' fill='%230F0D0B'/%3E%3Cpath d='M24 8v32M8 24h32' stroke='%23D9B46A' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='6' fill='%230F0D0B' stroke='%23D9B46A' stroke-width='3'/%3E%3C/svg%3E">
@@ -164,7 +167,7 @@ def cta_group(lang, label, text, micro, extra="", pulse=False):
 def topbar(lang, t):
     other = "ES" if lang == "EN" else "EN"
     cur = f'<span aria-current="true">{lang}</span>'
-    link = f'<a href="sales-page-{other}.html" hreflang="{other.lower()}" lang="{other.lower()}">{other}</a>'
+    link = f'<a href="/{other.lower()}" hreflang="{other.lower()}" lang="{other.lower()}">{other}</a>'
     pair = cur + link if lang == "EN" else link + cur
     return (f'<header class="wrap topbar"><span class="mark" role="img" aria-label="{t["brand_short"]}">{CROSS}</span>'
             f'<nav class="lang" aria-label="{t["lang_label"]}">{pair}</nav></header>')

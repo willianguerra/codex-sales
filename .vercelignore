@@ -5,3 +5,6 @@ dev-server.js
 *.md
 .claude
 emails
+config.json
+upsell-audio-*.html
+downsell-audio-*.html
