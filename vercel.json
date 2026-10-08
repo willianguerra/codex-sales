@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/sales-page-EN" },
+    { "source": "/", "destination": "/sales-page-ES" },
     { "source": "/en", "destination": "/sales-page-EN" },
     { "source": "/es", "destination": "/sales-page-ES" }
   ],

@@ -37,7 +37,7 @@ http.createServer((req, res) => {
     });
     return;
   }
-  const file = path.join(ROOT, decodeURIComponent(url.pathname === "/" ? "/sales-page-EN.html" : url.pathname));
+  const file = path.join(ROOT, decodeURIComponent(url.pathname === "/" ? "/sales-page-ES.html" : url.pathname));
   if (!file.startsWith(ROOT) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) { res.statusCode = 404; return res.end("Not found"); }
   res.setHeader("Content-Type", TYPES[path.extname(file)] || "application/octet-stream");
   fs.createReadStream(file).pipe(res);
