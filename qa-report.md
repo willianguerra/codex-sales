@@ -11,7 +11,7 @@ Data: 2026-10-08 · Conferido contra `the-ethiopian-codex-EN.pdf` (100 p.) e `th
 | 3 | Nome da marca e e-mail de suporte (hoje: `The Ethiopian Codex` / `support@example.com`) | `config.json → brand_name, support_email` |
 | 4 | URL do site (para Open Graph e hreflang) | `config.json → site_url` |
 | 5 | **Resend:** verificar um domínio de envio (a conta Resend conectada aqui não tem nenhum domínio — sem isso o Resend só envia para o seu próprio e-mail) e definir `RESEND_API_KEY` e `RESEND_FROM` na hospedagem | Resend → Domains; ver `README.md` |
-| 6 | Páginas de Termos e Privacidade | `config.json → legal_urls` |
+| 6 | ~~Páginas de Termos e Privacidade~~ ✅ `terms-*.html`, `privacy-*.html` (texto em `src/legal.*.json`) | `config.json → legal_urls` |
 | 7 | ~~PDF da isca~~ → resolvido: a isca agora é a **prévia de 7 páginas** (EN/ES) enviada por e-mail via Resend, com instruções de compra | `api/free-preview.js` |
 | 8 | Produtos ainda não fornecidos: guia de Nicodemos (bump), audiolivro (upsell), plano de 30 dias em áudio (downsell). Não ative essas ofertas na Hotmart antes de existirem | Hotmart |
 | 9 | Widgets de 1 clique da Hotmart | `config.json → hotmart_widget_html` |

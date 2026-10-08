@@ -1,0 +1,79 @@
+{
+  "back": "Volver al libro",
+  "updated": "Última actualización: 8 de octubre de 2026",
+  "terms": {
+    "title": "Términos de uso",
+    "description": "Términos que se aplican al sitio de {brand_name} y a la compra del libro digital.",
+    "sections": [
+      {"h": "1. Quiénes somos", "p": [
+        "Este sitio (ethiopian-codex.com) vende <em>{brand_name}</em>, un libro digital educativo e independiente sobre los libros de la Biblia ortodoxa etíope. En estos términos, «nosotros» es el editor de {brand_name} y «tú» es cualquier persona que visita el sitio o compra el producto. Contacto: <a href=\"mailto:{support_email}\">{support_email}</a>."
+      ]},
+      {"h": "2. Uso del sitio", "p": [
+        "Al usar este sitio aceptas estos términos. Si no estás de acuerdo, no uses el sitio. Te comprometes a no hacer un uso indebido del sitio, por ejemplo enviando solicitudes automáticas al formulario de la muestra gratis o intentando vulnerar su seguridad."
+      ]},
+      {"h": "3. Compras y pago", "p": [
+        "Los pagos los procesa Hotmart, que actúa como plataforma de pago y revendedor. Al comprar, también aceptas los términos de compra y la política de privacidad de Hotmart. El precio que ves en la página es el que se cobra en el pago; los impuestos, la conversión de moneda y las comisiones de la tarjeta dependen de tu país y del medio de pago, y Hotmart te los muestra antes de pagar.",
+        "Cuando se confirma el pago, Hotmart te da acceso al producto. Si no recibes el acceso, escríbenos o contacta con el soporte de Hotmart."
+      ]},
+      {"h": "4. Garantía de 7 días y reembolsos", "p": [
+        "Puedes pedir el reembolso total dentro de los 7 días posteriores a la compra, por cualquier motivo. Solicítalo a través de Hotmart (en el correo de confirmación de compra o en el centro de ayuda de Hotmart) o escribe a <a href=\"mailto:{support_email}\">{support_email}</a>. Después del reembolso, el acceso al producto termina."
+      ]},
+      {"h": "5. Tu licencia del libro", "p": [
+        "El libro es para tu uso personal y no comercial. Puedes leerlo en tus propios dispositivos e imprimirlo para ti. No puedes revenderlo, compartirlo, subirlo a internet ni distribuirlo, total o parcialmente, sin nuestro permiso por escrito. Las citas breves con mención de la fuente, para reseñas o estudio, son bienvenidas.",
+        "Los textos antiguos citados en el libro provienen de traducciones de dominio público, que siguen siendo libres para todos. Nuestros comentarios, estructura, diseño y traducciones están protegidos por derechos de autor."
+      ]},
+      {"h": "6. Muestra gratis", "p": [
+        "La muestra gratis que enviamos por correo es un extracto del libro para tu uso personal. Se le aplican las mismas reglas de licencia."
+      ]},
+      {"h": "7. Contenido educativo", "p": [
+        "{brand_name} es una guía educativa independiente basada en traducciones de dominio público y en estudios publicados. No es una publicación oficial de la Iglesia Ortodoxa Etíope Tewahedo ni de ninguna otra iglesia, y no es asesoramiento religioso, legal ni profesional. Los especialistas no están de acuerdo en muchos de estos temas; el libro cita sus fuentes para que puedas comprobarlas. Este sitio no está afiliado a YouTube ni a Google."
+      ]},
+      {"h": "8. Responsabilidad", "p": [
+        "Trabajamos para que el contenido sea correcto, pero ofrecemos el sitio y el libro «tal cual». En la medida en que la ley lo permita, no respondemos por pérdidas indirectas derivadas de su uso. Nuestra responsabilidad total por una compra se limita al importe que pagaste. Nada en estos términos limita los derechos que la ley de consumo de tu país te otorga y que no se pueden renunciar."
+      ]},
+      {"h": "9. Cambios", "p": [
+        "Podemos actualizar estos términos. La fecha de arriba indica la versión vigente. Los cambios no afectan a las compras ya realizadas."
+      ]},
+      {"h": "10. Contacto", "p": [
+        "Preguntas sobre estos términos o tu compra: <a href=\"mailto:{support_email}\">{support_email}</a>."
+      ]}
+    ]
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "description": "Qué datos personales recoge el sitio de {brand_name}, para qué y cómo controlarlos.",
+    "sections": [
+      {"h": "1. Resumen", "p": [
+        "Recogemos muy pocos datos: tu correo si pides la muestra gratis y los datos técnicos que recibe cualquier sitio web. No vendemos tus datos. Puedes pedirnos que los borremos en cualquier momento escribiendo a <a href=\"mailto:{support_email}\">{support_email}</a>."
+      ]},
+      {"h": "2. Responsable", "p": [
+        "El editor de <em>{brand_name}</em> es el responsable de los datos recogidos en ethiopian-codex.com. Contacto para cualquier solicitud de privacidad: <a href=\"mailto:{support_email}\">{support_email}</a>."
+      ]},
+      {"h": "3. Qué recogemos y para qué", "p": [
+        "<strong>Formulario de la muestra gratis:</strong> tu correo, el idioma que elegiste (inglés o español) y tu consentimiento. Los usamos para enviarte la muestra gratis y, como indica el formulario, notas ocasionales sobre el libro. La base legal es tu consentimiento.",
+        "<strong>Datos técnicos:</strong> cuando visitas el sitio, nuestro proveedor de alojamiento recibe tu dirección IP, el tipo de navegador y las páginas solicitadas, y los guarda en registros de corta duración por seguridad y para mantener el sitio funcionando. La base legal es nuestro interés legítimo en operar un sitio seguro.",
+        "<strong>Compras:</strong> el pago lo gestiona por completo Hotmart. No vemos ni guardamos los datos de tu tarjeta. Hotmart nos comparte la información necesaria para entregar el producto y darte soporte (como tu nombre y correo). A los datos que entregas a Hotmart se les aplica su propia política de privacidad.",
+        "<strong>Enlaces:</strong> los botones pueden llevar etiquetas de campaña (como <code>src</code> o <code>utm_</code>) hasta el pago para saber qué video o página trajo una venta. Estas etiquetas no te identifican personalmente."
+      ]},
+      {"h": "4. Cookies", "p": [
+        "Este sitio no instala cookies propias ni usa rastreadores de publicidad o analítica. Las fuentes se cargan desde Google Fonts, por lo que tu navegador se conecta a Google y le comparte tu dirección IP. Si alguna vez añadimos analítica o píxeles de publicidad, actualizaremos esta política y pediremos tu consentimiento cuando la ley lo exija. El pago de Hotmart usa sus propias cookies, descritas en la política de Hotmart."
+      ]},
+      {"h": "5. Quién trata tus datos por nosotros", "p": [
+        "<strong>Resend</strong> envía nuestros correos y guarda los registros relacionados (dirección, registros de envío). <strong>Vercel</strong> aloja el sitio. <strong>Hotmart</strong> procesa los pagos. <strong>Google Fonts</strong> sirve las tipografías. Estos proveedores pueden tratar datos fuera de tu país, incluidos Estados Unidos y Brasil, con sus propias garantías de seguridad y de transferencia de datos."
+      ]},
+      {"h": "6. Cuánto tiempo los guardamos", "p": [
+        "Guardamos tu correo hasta que te des de baja o nos pidas borrarlo. El proveedor de alojamiento guarda los registros del servidor solo por un periodo corto. Los registros de compra se guardan el tiempo que exigen las leyes fiscales y contables."
+      ]},
+      {"h": "7. Tus derechos", "p": [
+        "Según dónde vivas (por ejemplo, el RGPD en Europa, la LGPD en Brasil o las leyes de protección de datos de tu país en América Latina), puedes pedir acceder, corregir, exportar o borrar tus datos, retirar tu consentimiento u oponerte a su uso. Escribe a <a href=\"mailto:{support_email}\">{support_email}</a> y te responderemos en un plazo de 15 días. También puedes reclamar ante la autoridad de protección de datos de tu país.",
+        "Para dejar de recibir nuestros correos, escribe a la misma dirección con la palabra «baja»."
+      ]},
+      {"h": "8. Menores", "p": [
+        "Este sitio no está dirigido a menores de 16 años y no recogemos sus datos a sabiendas."
+      ]},
+      {"h": "9. Cambios", "p": [
+        "Podemos actualizar esta política. La fecha de arriba indica la versión vigente."
+      ]}
+    ]
+  }
+}

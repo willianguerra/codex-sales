@@ -60,6 +60,8 @@ module.exports = async function handler(req, res) {
   // Same address + language within 24 h is sent only once (double clicks, refreshes).
   const day = new Date().toISOString().slice(0, 10);
   const sent = await resend("/emails", key, message, { "Idempotency-Key": "free-preview/" + lang + "/" + day + "/" + email });
+  // 409 = this address already got today's preview, but the message has changed since (new deploy). Don't resend.
+  if (sent.status === 409) return res.status(200).json({ ok: true });
   if (!sent.ok) {
     console.error("free-preview: Resend " + sent.status + " " + (await sent.text()));
     return res.status(502).json({ ok: false, error: "send_failed" });

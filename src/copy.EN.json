@@ -270,7 +270,7 @@
     "cta": "Get the full book — {price}",
     "guarantee": "You have a 7-day guarantee: if you feel it wasn't worth it, ask Hotmart for a full refund.",
     "sign": "Happy reading,",
-    "footer": "You're receiving this because you asked for the free preview at our website. Questions? Just reply to this email. This is an independent educational guide; it is not an official publication of the Ethiopian Orthodox Tewahedo Church or any other church.",
+    "footer": "You're receiving this because you asked for the free preview at our website. Questions? Write to {support_email}. This is an independent educational guide; it is not an official publication of the Ethiopian Orthodox Tewahedo Church or any other church.",
     "attachment": "the-ethiopian-codex-preview-EN.pdf"
   }
 }

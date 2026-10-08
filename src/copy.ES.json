@@ -270,7 +270,7 @@
     "cta": "Quiero el libro completo — {price}",
     "guarantee": "Tienes una garantía de 7 días: si sientes que no valió la pena, pide a Hotmart el reembolso completo.",
     "sign": "¡Buena lectura!",
-    "footer": "Recibes este correo porque pediste la muestra gratis en nuestro sitio. ¿Preguntas? Responde a este correo. Esta es una guía educativa independiente; no es una publicación oficial de la Iglesia Ortodoxa Etíope Tewahedo ni de ninguna otra iglesia.",
+    "footer": "Recibes este correo porque pediste la muestra gratis en nuestro sitio. ¿Preguntas? Escríbenos a {support_email}. Esta es una guía educativa independiente; no es una publicación oficial de la Iglesia Ortodoxa Etíope Tewahedo ni de ninguna otra iglesia.",
     "attachment": "el-codice-etiope-muestra-ES.pdf"
   }
 }

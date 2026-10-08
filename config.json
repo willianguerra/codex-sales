@@ -40,8 +40,8 @@
     "ES": "downsell-audio-ES.html"
   },
   "legal_urls": {
-    "terms": "#",
-    "privacy": "#"
+    "terms": "/terms-{lang}",
+    "privacy": "/privacy-{lang}"
   },
   "hotmart_widget_html": {
     "upsell_EN": "",

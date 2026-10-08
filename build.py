@@ -4,6 +4,7 @@ Usage:  python build.py
 Writes: sales-page-EN.html, sales-page-ES.html,
         upsell-audio-EN.html, upsell-audio-ES.html,
         downsell-audio-EN.html, downsell-audio-ES.html,
+        terms-{EN,ES}.html, privacy-{EN,ES}.html (from src/legal.<LANG>.json),
         emails/free-preview-{EN,ES}.html, api/_content.js (used by api/free-preview.js)
 Every price, link and variable comes from config.json; every sentence from src/copy.<LANG>.json.
 """
@@ -350,7 +351,7 @@ def sales_page(lang):
   <div class="wrap">
     <div class="orn">{CROSS}</div>
     <p>{ft['rights']}</p>
-    <nav aria-label="Legal"><a href="{escape(CFG['legal_urls']['terms'])}">{ft['terms']}</a><a href="{escape(CFG['legal_urls']['privacy'])}">{ft['privacy']}</a><a href="mailto:{email}">{ft['contact']} ({email})</a></nav>
+    <nav aria-label="Legal"><a href="{legal_url('terms', lang)}">{ft['terms']}</a><a href="{legal_url('privacy', lang)}">{ft['privacy']}</a><a href="mailto:{email}">{ft['contact']} ({email})</a></nav>
     <p class="disc">{ft['disclaimer']}</p>
   </div>
 </footer>"""
@@ -369,6 +370,31 @@ def sales_page(lang):
             + "\n<body>\n<main>" + hero + ident + middle + contents + offer + testimonials + faq + "</main>"
             + footer + bar + f"\n<script>{JS}</script>\n</body>\n</html>\n")
     return html
+
+
+def legal_url(kind, lang):
+    return escape(CFG["legal_urls"][kind].replace("{lang}", lang))
+
+
+# ---------- terms and privacy (src/legal.<LANG>.json) ----------
+def legal_page(lang, kind):
+    t = deep_fill(json.loads((SRC / f"copy.{lang}.json").read_text(encoding="utf8")), lang)
+    g = deep_fill(json.loads((SRC / f"legal.{lang}.json").read_text(encoding="utf8")), lang)
+    d = g[kind]
+    body = "".join(f"<h2>{sec['h']}</h2>" + "".join(f"<p>{x}</p>" for x in sec["p"]) for sec in d["sections"])
+    return (head(lang, t, f"{d['title']} · {CFG['brand_name']}", d["description"], f"{kind}-{lang}") + f"""
+<body>
+<main class="dark legal">
+  <div class="wrap">
+    <p class="kicker"><a href="/{lang.lower()}">&larr; {g['back']}</a></p>
+    <h1>{d['title']}</h1>
+    <p class="updated">{g['updated']}</p>
+    {body}
+  </div>
+</main>
+</body>
+</html>
+""")
 
 
 # ---------- post-purchase pages ----------
@@ -499,6 +525,8 @@ if __name__ == "__main__":
             f"sales-page-{lang}.html": sales_page(lang),
             f"upsell-audio-{lang}.html": offer_page(lang, "upsell"),
             f"downsell-audio-{lang}.html": offer_page(lang, "downsell"),
+            f"terms-{lang}.html": legal_page(lang, "terms"),
+            f"privacy-{lang}.html": legal_page(lang, "privacy"),
         }
         for name, html in out.items():
             (ROOT / name).write_text(html, encoding="utf8")
