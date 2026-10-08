@@ -42,7 +42,7 @@ A função `api/free-preview.js` segue o formato da Vercel (pasta `api/`). As p�
    | Variável | Exemplo |
    |---|---|
    | `RESEND_API_KEY` | `re_...` |
-   | `RESEND_FROM` | `The Ethiopian Codex <codex@seudominio.com>` |
+   | `RESEND_FROM` | `The Ethiopian Codex <codex@ethiopian-codex.com>` |
    | `RESEND_REPLY_TO` | `suporte@seudominio.com` (opcional) |
    | `RESEND_AUDIENCE_ID_EN` / `RESEND_AUDIENCE_ID_ES` | IDs das audiences (opcional) |
 
