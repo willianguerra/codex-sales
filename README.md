@@ -8,6 +8,7 @@
 | `upsell-audio-*.html`, `downsell-audio-*.html` | Ofertas após a compra (geradas) |
 | `emails/free-preview-*.html` | Template do e-mail da prévia grátis (gerado — abra no navegador para ver) |
 | `api/free-preview.js` | Função que envia o e-mail pelo **Resend** com a prévia em PDF no idioma do visitante |
+| `api/unsubscribe.js` | Link de descadastro do rodapé (e botão nativo do Gmail): marca o contato como `unsubscribed` no Resend |
 | `api/_content.js` | Gerado: assunto, HTML, texto e PDF (base64) do e-mail |
 | `previews/` | PDFs de prévia anexados ao e-mail |
 | `config.json` | Preços, links, URLs, pixels, testes A/B |
@@ -36,7 +37,7 @@ A função `api/free-preview.js` segue o formato da Vercel (pasta `api/`). As p�
 
 1. **Resend → Domains:** adicione e verifique o domínio de envio (registros DNS). Sem domínio verificado, o Resend só entrega para o e-mail do dono da conta.
 2. **Resend → API Keys:** crie uma chave com permissão de envio.
-3. (Opcional) **Resend → Audiences:** crie uma audience para EN e outra para ES — o formulário salva os leads nelas para a sequência de e-mails.
+3. **Resend → Segments:** já existem `Ethiopian Codex — leads EN` e `— leads ES`. O formulário salva cada lead no segmento do idioma, para a sequência de e-mails.
 4. **Vercel → Settings → Environment Variables:**
 
    | Variável | Exemplo |
@@ -44,8 +45,11 @@ A função `api/free-preview.js` segue o formato da Vercel (pasta `api/`). As p�
    | `RESEND_API_KEY` | `re_...` |
    | `RESEND_FROM` | `The Ethiopian Codex <noreply@ethiopian-codex.com>` |
    | `RESEND_REPLY_TO` | não usado: o e-mail de prévia sai de `noreply@` (o suporte é `suporte@ethiopian-codex.com`, caixa no Resend) |
-   | `RESEND_AUDIENCE_ID_EN` / `RESEND_AUDIENCE_ID_ES` | IDs das audiences (opcional) |
+   | `RESEND_SEGMENT_ID_EN` / `RESEND_SEGMENT_ID_ES` | IDs dos segmentos de leads |
+   | `UNSUBSCRIBE_SECRET` | texto aleatório longo que assina os links de descadastro (não troque: invalida os links já enviados) |
 
 5. Em `config.json`, ajuste `site_url` (o e-mail usa essa URL para mostrar a capa), os links de checkout e o resto das pendências listadas em `qa-report.md`. Rode `python build.py` e publique.
+
+Todo e-mail tem link de descadastro no rodapé e cabeçalho `List-Unsubscribe` (botão "Cancelar inscrição" do Gmail). Quem se descadastra fica `unsubscribed` no Resend e é pulado por qualquer broadcast ou automação.
 
 O mesmo e-mail no mesmo idioma recebe a prévia no máximo uma vez por dia (Idempotency-Key do Resend). Um campo oculto barra bots simples; se aparecer abuso, adicione um rate limit na Vercel (Firewall).

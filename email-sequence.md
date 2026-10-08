@@ -1,6 +1,6 @@
 # Sequência de e-mails (quem pegou a isca grátis)
 
-O e-mail do dia 0 sai sozinho pelo Resend. Os dias 2, 4 e 6 você monta no Resend (Automations/Broadcasts) usando as audiences `RESEND_AUDIENCE_ID_EN` e `RESEND_AUDIENCE_ID_ES`, que o formulário já alimenta separadas por idioma. Links de checkout com origem `email-{n}`, ex.: `https://pay.hotmart.com/XXXXXXXX?src=email-2`.
+O e-mail do dia 0 sai sozinho pelo Resend. Os dias 2, 4 e 6 você monta no Resend (Automations/Broadcasts) usando os segmentos `Ethiopian Codex — leads EN` e `— leads ES`, que o formulário já alimenta separados por idioma. **Em todo e-mail da sequência, coloque o link de descadastro do Resend `{{{RESEND_UNSUBSCRIBE_URL}}}` no rodapé** — o Resend já pula quem se descadastrou (pelo rodapé de qualquer e-mail, inclusive o do dia 0). Links de checkout com origem `email-{n}`, ex.: `https://pay.hotmart.com/XXXXXXXX?src=email-2`.
 
 | Dia | Assunto EN | Assunto ES | Conteúdo |
 |---|---|---|---|

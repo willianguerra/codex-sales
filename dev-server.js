@@ -14,19 +14,23 @@ const DRY = !process.env.RESEND_API_KEY;
 if (DRY) {
   process.env.RESEND_API_KEY = "dry-run";
   process.env.RESEND_FROM = process.env.RESEND_FROM || "The Ethiopian Codex <dry-run@example.com>";
+  process.env.UNSUBSCRIBE_SECRET = process.env.UNSUBSCRIBE_SECRET || "dry-run";
   global.fetch = async (url, opts) => {
     const p = JSON.parse(opts.body);
-    console.log("[dry-run] POST", url, "| to:", p.to, "| subject:", p.subject,
+    console.log("[dry-run]", opts.method, url, "| body:", p.to ? "" : JSON.stringify(p), "| to:", p.to, "| subject:", p.subject,
+      "| unsubscribe:", p.headers ? p.headers["List-Unsubscribe"] : "-",
       "| attachment:", p.attachments ? p.attachments[0].filename + " (" + Math.round(p.attachments[0].content.length * 0.75 / 1024) + " KB)" : "-",
       "| idempotency:", opts.headers["Idempotency-Key"] || "-");
     return { ok: true, status: 200, text: async () => "{}" };
   };
 }
-const handler = require("./api/free-preview.js");
+const API = { "/api/free-preview": require("./api/free-preview.js"), "/api/unsubscribe": require("./api/unsubscribe.js") };
 
 http.createServer((req, res) => {
   const url = new URL(req.url, "http://localhost");
-  if (url.pathname === "/api/free-preview") {
+  const handler = API[url.pathname];
+  if (handler) {
+    req.query = Object.fromEntries(url.searchParams);
     let raw = "";
     req.on("data", (c) => (raw += c));
     req.on("end", () => {

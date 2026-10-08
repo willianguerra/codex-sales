@@ -479,6 +479,7 @@ def email_html(lang):
   </td></tr>
   <tr><td style="background:#0F0D0B;padding:20px 28px">
     <p style="margin:0;font-family:{sans};font-size:12px;line-height:1.6;color:#9C8E7A">{e['footer']}</p>
+    <p style="margin:10px 0 0;font-family:{sans};font-size:12px;line-height:1.6;color:#9C8E7A">{e['unsub']} <a href="%%UNSUBSCRIBE_URL%%" style="color:#D9B46A">{e['unsub_link']}</a></p>
   </td></tr>
 </table></td></tr></table>
 </body></html>
@@ -492,7 +493,7 @@ def email_text(lang):
     lines = [strip_tags(e["h1"]), "", strip_tags(e["intro"])] + [f"- {strip_tags(x)}" for x in e["inside"]]
     lines += ["", strip_tags(e["full_h2"]), strip_tags(e["full"]), "", strip_tags(e["how_h2"])]
     lines += [f"{n}. {strip_tags(x)}" for n, x in enumerate(e["steps"], 1)]
-    lines += ["", f"{strip_tags(e['cta'])}: {href}", "", strip_tags(e["guarantee"]), "", e["sign"], CFG["brand_name"], "", "--", strip_tags(e["footer"])]
+    lines += ["", f"{strip_tags(e['cta'])}: {href}", "", strip_tags(e["guarantee"]), "", e["sign"], CFG["brand_name"], "", "--", strip_tags(e["footer"]), f"{e['unsub']} {e['unsub_link']}: %%UNSUBSCRIBE_URL%%"]
     return "\n".join(lines)
 
 
@@ -500,7 +501,7 @@ def write_email_bundle():
     """emails/*.html for preview + api/_content.js with subject, html, text and the preview PDF (base64)."""
     import base64
     (ROOT / "emails").mkdir(exist_ok=True)
-    bundle = {}
+    bundle = {"site_url": CFG["site_url"], "support_email": CFG["support_email"]}
     for lang in LANGS:
         t = deep_fill(json.loads((SRC / f"copy.{lang}.json").read_text(encoding="utf8")), lang)
         html = email_html(lang)

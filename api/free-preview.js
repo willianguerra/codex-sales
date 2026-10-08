@@ -5,9 +5,11 @@
 //   RESEND_API_KEY            required  re_...
 //   RESEND_FROM               required  "The Ethiopian Codex <codex@your-verified-domain.com>"
 //   RESEND_REPLY_TO           optional  support address that receives replies
-//   RESEND_AUDIENCE_ID_EN     optional  Resend audience that collects EN leads (for the email sequence)
-//   RESEND_AUDIENCE_ID_ES     optional  same for ES
+//   UNSUBSCRIBE_SECRET        required  signs the unsubscribe link in the footer (see _unsubscribe-token.js)
+//   RESEND_SEGMENT_ID_EN      optional  Resend segment that collects EN leads (for the email sequence)
+//   RESEND_SEGMENT_ID_ES      optional  same for ES
 const CONTENT = require("./_content.js");
+const { unsubscribeUrl } = require("./_unsubscribe-token.js");
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
@@ -46,13 +48,16 @@ module.exports = async function handler(req, res) {
   }
 
   const c = CONTENT[lang];
+  const unsub = unsubscribeUrl(CONTENT.site_url, email, lang);
   const message = {
     from: from,
     to: [email],
     subject: c.subject,
-    html: c.html,
-    text: c.text,
+    html: c.html.replace(/%%UNSUBSCRIBE_URL%%/g, unsub.replace(/&/g, "&amp;")),
+    text: c.text.replace(/%%UNSUBSCRIBE_URL%%/g, unsub),
     attachments: [{ filename: c.filename, content: c.pdf_base64 }],
+    // Shows the native "Unsubscribe" button in Gmail / Apple Mail (one-click, RFC 8058).
+    headers: { "List-Unsubscribe": "<" + unsub + ">", "List-Unsubscribe-Post": "List-Unsubscribe=One-Click" },
     tags: [{ name: "flow", value: "free_preview" }, { name: "lang", value: lang }],
   };
   if (process.env.RESEND_REPLY_TO) message.reply_to = process.env.RESEND_REPLY_TO;
@@ -68,10 +73,11 @@ module.exports = async function handler(req, res) {
   }
 
   // Keep the lead for the follow-up sequence. A failure here never blocks the visitor.
-  const audience = process.env["RESEND_AUDIENCE_ID_" + lang];
-  if (audience) {
+  // An address that already exists (asked again, or unsubscribed earlier) is left as it is.
+  const segment = process.env["RESEND_SEGMENT_ID_" + lang];
+  if (segment) {
     try {
-      const r = await resend("/audiences/" + audience + "/contacts", key, { email: email, unsubscribed: false });
+      const r = await resend("/contacts", key, { email: email, unsubscribed: false, segments: [{ id: segment }] });
       if (!r.ok) console.error("free-preview: contact " + r.status + " " + (await r.text()));
     } catch (e) {
       console.error("free-preview: contact error", e);
