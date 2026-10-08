@@ -73,11 +73,21 @@ module.exports = async function handler(req, res) {
   }
 
   // Keep the lead for the follow-up sequence. A failure here never blocks the visitor.
-  // An address that already exists (asked again, or unsubscribed earlier) is left as it is.
+  // unsubscribe_url is the same signed link, used in the sequence footer as {{{contact.unsubscribe_url}}}.
   const segment = process.env["RESEND_SEGMENT_ID_" + lang];
   if (segment) {
     try {
-      const r = await resend("/contacts", key, { email: email, unsubscribed: false, segments: [{ id: segment }] });
+      const props = { unsubscribe_url: unsub };
+      let r = await resend("/contacts", key, { email: email, unsubscribed: false, segments: [{ id: segment }], properties: props });
+      if (!r.ok && r.status !== 429) {
+        // Already a contact (asked again, or unsubscribed earlier): refresh the link and the segment,
+        // but never touch their subscription status.
+        console.warn("free-preview: contact create " + r.status + " " + (await r.text()));
+        const base = "https://api.resend.com/contacts/" + encodeURIComponent(email);
+        const auth = { Authorization: "Bearer " + key, "Content-Type": "application/json" };
+        r = await fetch(base, { method: "PATCH", headers: auth, body: JSON.stringify({ properties: props }) });
+        if (r.ok) r = await fetch(base + "/segments/" + segment, { method: "POST", headers: auth });
+      }
       if (!r.ok) console.error("free-preview: contact " + r.status + " " + (await r.text()));
     } catch (e) {
       console.error("free-preview: contact error", e);

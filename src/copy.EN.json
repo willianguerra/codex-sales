@@ -271,6 +271,7 @@
     "guarantee": "You have a 7-day guarantee: if you feel it wasn't worth it, ask Hotmart for a full refund.",
     "sign": "Happy reading,",
     "footer": "You're receiving this because you asked for the free preview at our website. Questions? Write to {support_email}. This is an independent educational guide; it is not an official publication of the Ethiopian Orthodox Tewahedo Church or any other church.",
+    "seq_footer": "You're receiving this because you asked for the free preview of {brand_name}. Questions? Write to {support_email}.",
     "unsub": "Don't want more emails from us?",
     "unsub_link": "Unsubscribe",
     "attachment": "the-ethiopian-codex-preview-EN.pdf"

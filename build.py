@@ -497,6 +497,19 @@ def email_text(lang):
     return "\n".join(lines)
 
 
+def sequence_footer(lang):
+    """Footer for the day 2/4/6 emails built in Resend. {{{contact.unsubscribe_url}}} is each lead's signed link (api/unsubscribe.js)."""
+    t = deep_fill(json.loads((SRC / f"copy.{lang}.json").read_text(encoding="utf8")), lang)
+    e = t["email"]
+    sans = "-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+    return f"""<!-- Rodapé da sequência ({lang}). Cole no fim de cada e-mail dos dias 2, 4 e 6 no Resend. -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:600px;margin:0 auto"><tr><td style="background:#0F0D0B;padding:20px 28px">
+  <p style="margin:0;font-family:{sans};font-size:12px;line-height:1.6;color:#9C8E7A">{e['seq_footer']}</p>
+  <p style="margin:10px 0 0;font-family:{sans};font-size:12px;line-height:1.6;color:#9C8E7A">{e['unsub']} <a href="{{{{{{contact.unsubscribe_url}}}}}}" style="color:#D9B46A">{e['unsub_link']}</a></p>
+</td></tr></table>
+"""
+
+
 def write_email_bundle():
     """emails/*.html for preview + api/_content.js with subject, html, text and the preview PDF (base64)."""
     import base64
@@ -506,6 +519,7 @@ def write_email_bundle():
         t = deep_fill(json.loads((SRC / f"copy.{lang}.json").read_text(encoding="utf8")), lang)
         html = email_html(lang)
         (ROOT / "emails" / f"free-preview-{lang}.html").write_text(html, encoding="utf8")
+        (ROOT / "emails" / f"sequence-footer-{lang}.html").write_text(sequence_footer(lang), encoding="utf8")
         pdf = ROOT / "previews" / f"the-ethiopian-codex-{lang}-preview.pdf"
         bundle[lang] = {
             "subject": t["email"]["subject"],

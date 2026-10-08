@@ -1,6 +1,8 @@
 # Sequência de e-mails (quem pegou a isca grátis)
 
-O e-mail do dia 0 sai sozinho pelo Resend. Os dias 2, 4 e 6 você monta no Resend (Automations/Broadcasts) usando os segmentos `Ethiopian Codex — leads EN` e `— leads ES`, que o formulário já alimenta separados por idioma. **Em todo e-mail da sequência, coloque o link de descadastro do Resend `{{{RESEND_UNSUBSCRIBE_URL}}}` no rodapé** — o Resend já pula quem se descadastrou (pelo rodapé de qualquer e-mail, inclusive o do dia 0). Links de checkout com origem `email-{n}`, ex.: `https://pay.hotmart.com/XXXXXXXX?src=email-2`.
+O e-mail do dia 0 sai sozinho pelo Resend. Os dias 2, 4 e 6 você monta no Resend (Automations/Broadcasts) usando os segmentos `Ethiopian Codex — leads EN` e `— leads ES`, que o formulário já alimenta separados por idioma. Links de checkout com origem `email-{n}`, ex.: `https://pay.hotmart.com/P107944739C?src=email-2`.
+
+**Descadastro (obrigatório em todo e-mail da sequência):** cole no fim de cada e-mail o rodapé de `emails/sequence-footer-EN.html` ou `-ES.html`. O link usa `{{{contact.unsubscribe_url}}}`: o link assinado do próprio lead (o mesmo do dia 0), que o formulário grava no contato. Ele leva para `ethiopian-codex.com/api/unsubscribe`, e quem confirma fica `unsubscribed` no Resend e não recebe mais nada da sequência. Contato sem o link cai no fallback `mailto:suporte@ethiopian-codex.com?subject=unsubscribe`.
 
 | Dia | Assunto EN | Assunto ES | Conteúdo |
 |---|---|---|---|
