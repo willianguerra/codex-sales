@@ -1,0 +1,7 @@
+src
+previews
+build.py
+dev-server.js
+*.md
+.claude
+emails

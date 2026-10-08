@@ -1,0 +1,52 @@
+{
+  "brand_name": "The Ethiopian Codex",
+  "support_email": "support@example.com",
+  "year": 2026,
+  "site_url": "https://example.com",
+  "noindex": true,
+  "headline_variant": "A",
+  "proof_before_preview": false,
+  "show_testimonials": false,
+  "EN": {
+    "checkout_url": "https://pay.hotmart.com/XXXXXXXX",
+    "price": "$17.99",
+    "anchor_price": null,
+    "bump_price": "$7",
+    "upsell_price": "$19",
+    "downsell_price": "$7",
+    "page_count": "100"
+  },
+  "ES": {
+    "checkout_url": "https://pay.hotmart.com/XXXXXXXX?lang=es",
+    "price": "US$ 17,99",
+    "anchor_price": null,
+    "bump_price": "US$ 7",
+    "upsell_price": "US$ 19",
+    "downsell_price": "US$ 7",
+    "page_count": "103"
+  },
+  "email_form": {
+    "action_url": "/api/free-preview",
+    "field_email": "email",
+    "field_lang": "language"
+  },
+  "pixels": {
+    "meta_pixel_id": null,
+    "google_tag_id": null
+  },
+  "upsell_only_here": false,
+  "upsell_next_url": {
+    "EN": "downsell-audio-EN.html",
+    "ES": "downsell-audio-ES.html"
+  },
+  "legal_urls": {
+    "terms": "#",
+    "privacy": "#"
+  },
+  "hotmart_widget_html": {
+    "upsell_EN": "",
+    "upsell_ES": "",
+    "downsell_EN": "",
+    "downsell_ES": ""
+  }
+}

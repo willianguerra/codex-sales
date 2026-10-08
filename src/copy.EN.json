@@ -1,0 +1,276 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "title": "The Ethiopian Codex — The Books Your Bible Left Out, Explained",
+  "description": "Enoch, Jubilees, Meqabyan and the other books of the Ethiopian Bible, explained chapter by chapter with every source cited. A {page_count}-page e-book made to read on your phone.",
+  "brand_short": "The Ethiopian Codex",
+  "lang_label": "Language",
+  "hero": {
+    "eyebrow": "The Ethiopian Codex",
+    "h1_A": [
+      "The Books Your Bible Left Out",
+      "— Now You Can Read Them Yourself"
+    ],
+    "h1_B": [
+      "Read the Book of Enoch",
+      "— Explained, With Every Source Cited"
+    ],
+    "sub": "The Ethiopian Orthodox Church has preserved books like Enoch and Jubilees for centuries. This guide explains them chapter by chapter, with every source cited — so you can see what's real and what's just internet hype.",
+    "ticks": [
+      "Real texts, explained simply",
+      "Every source cited",
+      "Made to read on your phone"
+    ],
+    "cover_alt": "Cover of The Ethiopian Codex on a phone screen",
+    "cta": "Get The Ethiopian Codex — {price}"
+  },
+  "micro": "🔒 Secure checkout · Instant download · 7-day guarantee",
+  "ident": {
+    "h2": "You've seen the videos. Now you have questions.",
+    "roll": "The Book of Enoch. The Watchers. The Nephilim. A Bible with more books than yours.",
+    "intro": "But when the video ends, two questions remain:",
+    "q": [
+      "Where can I actually read this?",
+      "And how much of it is true?"
+    ],
+    "body": "Most people try to read the Book of Enoch on their own — an old translation, more than 100 chapters, archaic language — and give up after a few pages.",
+    "turn": "<em>The Ethiopian Codex</em> was made so you don't have to."
+  },
+  "inside": {
+    "h2": "Take a look inside",
+    "sub": "Real pages from the book. No surprises.",
+    "label": "Pages from the book",
+    "prev": "Previous page",
+    "next": "Next page",
+    "captions": [
+      "The cover",
+      "Every chapter opens with a clear introduction",
+      "Ancient text + plain explanation + source",
+      "Where the New Testament quotes Enoch",
+      "Fact or Hype? — 10 viral claims, judged with sources",
+      "A 30-day reading plan to continue on your own"
+    ],
+    "alts": [
+      "Cover: The Ethiopian Codex — The Books Your Bible Left Out",
+      "Opening page of Part I, The Book of Enoch",
+      "A page quoting Acts 8:27 with its source box",
+      "A page comparing Jude 1:14 with 1 Enoch 1:9",
+      "Fact or Hype? claim number 4 with its verdict seal",
+      "First page of the 30-day reading plan"
+    ],
+    "cta": "I want to read it — {price}"
+  },
+  "proof": {
+    "h2": "Did you know the New Testament quotes the Book of Enoch?",
+    "jude_label": "The New Testament",
+    "jude": "And Enoch also, the seventh from Adam, prophesied of these, saying, <mark>Behold</mark>, the Lord <mark>cometh with ten thousands of his</mark> saints…",
+    "jude_cite": "— Jude 1:14 (KJV)",
+    "enoch_label": "The Book of Enoch",
+    "enoch": "And <mark>behold</mark>! He <mark>cometh with ten thousands of His</mark> holy ones To execute judgement upon all…",
+    "enoch_cite": "— 1 Enoch 1:9 (trans. R. H. Charles, 1917)",
+    "thread": "In Greek, the two passages share about 72% of their words",
+    "body": [
+      "This prophecy closely matches the opening chapter of the Book of Enoch — a book most Bibles in the West don't include, but the Ethiopian Orthodox Church has kept in its Bible.",
+      "That's the kind of discovery you'll find in <em>The Ethiopian Codex</em>: not rumors, but texts you can check for yourself."
+    ],
+    "source": "Jude 1:14 (KJV) · 1 Enoch 1:9 (trans. R. H. Charles, 1917) · both public domain"
+  },
+  "contents": {
+    "h2": "What's inside",
+    "lede": "Five parts and four appendices, in the order you'll read them.",
+    "items": [
+      {
+        "num": "፠",
+        "part": "Opening",
+        "title": "Why 81 Books?",
+        "desc": "How the Ethiopian Bible was formed, and why it has more books than yours. \"The 81 books\" is the Church's own name for its Bible — and different lists reach 81 in different ways."
+      },
+      {
+        "num": "፩",
+        "part": "Part I",
+        "title": "The Book of Enoch",
+        "desc": "The Watchers, the Nephilim, the seven archangels named in chapter 20, and Enoch's journeys through the heavens."
+      },
+      {
+        "num": "፪",
+        "part": "Part II",
+        "title": "The Book of Jubilees",
+        "desc": "The \"Little Genesis\": Genesis retold, week by week of years — and what it adds to the stories you already know."
+      },
+      {
+        "num": "፫",
+        "part": "Part III",
+        "title": "Found Only in the Ethiopian Bible",
+        "desc": "Including the three books of Meqabyan, which are <em>not</em> the Maccabees you may know."
+      },
+      {
+        "num": "፬",
+        "part": "Part IV",
+        "title": "Fact or Hype?",
+        "desc": "10 viral claims from the internet, each one judged with sources."
+      },
+      {
+        "num": "፭",
+        "part": "Part V",
+        "title": "Read It Yourself",
+        "desc": "Eleven passages printed in full, in R. H. Charles's public-domain translation."
+      },
+      {
+        "num": "A–D",
+        "part": "Appendices",
+        "title": "Keep Reading on Your Own",
+        "desc": "A 30-day reading plan, a glossary, \"Echoes in Your Bible\" and the full bibliography."
+      }
+    ],
+    "foh_tag": "Part IV · Fact or Hype?",
+    "foh_h3": "The chapter no video will give you",
+    "foh_claims": [
+      "It is the oldest Bible in the world.",
+      "A council in 363 AD removed these books.",
+      "It reveals what Jesus did in the three days before the Resurrection."
+    ],
+    "foh_seal_label": "Verdict inside the book",
+    "foh_verdicts_label": "Every claim gets one of five seals:",
+    "foh_verdicts": [
+      "True",
+      "True, but…",
+      "Exaggerated",
+      "No evidence",
+      "False"
+    ],
+    "foh_body": "True, exaggerated, or no evidence at all? We checked each claim against the sources, so you don't have to guess.",
+    "faith": "<strong>Written to deepen your faith — not to attack it.</strong> We explain what each text says, what scholars say about it, and what the Ethiopian tradition teaches, always with respect."
+  },
+  "offer": {
+    "mock_alt": "The Ethiopian Codex open on a tablet and a phone",
+    "h2": "Get instant access today",
+    "gets": [
+      "<em>The Ethiopian Codex</em> — complete e-book ({page_count} pages)",
+      "\"Fact or Hype?\" — 10 viral claims judged with sources",
+      "Eleven ancient passages printed in full",
+      "30-Day Reading Plan",
+      "Glossary of key terms",
+      "Full bibliography to check every source"
+    ],
+    "once": "One-time payment",
+    "compare": "Less than the price of a lunch — and yours forever.",
+    "cta": "Get The Ethiopian Codex — {price}",
+    "micro": "🔒 Secure checkout by Hotmart · 📱 PDF, instant download · Read on phone, tablet or computer",
+    "g_seal_top": "7",
+    "g_seal_bottom": "DAYS",
+    "g_h3": "7-day guarantee",
+    "g_body": "Read it. If you feel it wasn't worth it, ask for a full refund within 7 days. No questions, no hassle."
+  },
+  "faq": {
+    "h2": "Questions",
+    "items": [
+      [
+        "Is this a physical book?",
+        "No. It's a digital e-book (PDF). You'll receive it right after payment and can read it on your phone, tablet or computer."
+      ],
+      [
+        "Will this contradict my faith?",
+        "No. The book explains what each ancient text says, what scholars say about it, and what the Ethiopian tradition teaches. It's written to help you understand — not to attack anyone's beliefs."
+      ],
+      [
+        "Do I need to know theology?",
+        "Not at all. Everything is explained in simple language, and difficult terms are in the glossary."
+      ],
+      [
+        "Is this an official book of the Ethiopian Church?",
+        "No. It's an independent educational guide based on public-domain translations and published scholarship, all cited in the bibliography."
+      ],
+      [
+        "Does it include the full text of the Book of Enoch?",
+        "Not the whole book — 1 Enoch alone has more than 100 chapters. It explains the key passages in plain language, prints eleven passages in full (R. H. Charles's public-domain translation), and gives you a 30-day plan that tells you exactly which chapters to read."
+      ],
+      [
+        "How do I receive it?",
+        "Right after payment, you'll get an email from Hotmart with the download link."
+      ],
+      [
+        "What if I don't like it?",
+        "You have a 7-day guarantee. Ask for a refund and you'll get your money back."
+      ]
+    ],
+    "cta": "Get The Ethiopian Codex — {price}"
+  },
+  "gift": {
+    "h3": "Not ready yet? Read 7 pages free.",
+    "body": "Get a free preview of <em>The Ethiopian Codex</em> by email: the table of contents, the opening of the Book of Enoch, and two \"Fact or Hype?\" claims with their verdicts.",
+    "field": "Your best email",
+    "placeholder": "you@example.com",
+    "consent": "Yes, email me the free preview and occasional notes about The Ethiopian Codex.",
+    "button": "Send me the free preview",
+    "note": "No spam. Unsubscribe anytime.",
+    "ok": "Check your inbox! The preview is on its way.",
+    "err": "That didn't go through. Check the email address and try again.",
+    "unconfigured": "This form isn't connected yet (email_form.action_url is empty in config.json)."
+  },
+  "testimonials_h2": "What readers say",
+  "footer": {
+    "rights": "© {year} {brand_name}. All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "disclaimer": "This is an independent educational guide based on public-domain translations of ancient texts and on published scholarship. It is not an official publication of the Ethiopian Orthodox Tewahedo Church or any other church. This site is not affiliated with YouTube or Google."
+  },
+  "bar": {
+    "title": "The Ethiopian Codex",
+    "cta": "Get it now"
+  },
+  "upsell": {
+    "title": "Your order is confirmed — The Ethiopian Codex",
+    "confirm": "✅ Your order is confirmed! Check your email for the download link.",
+    "h1": "Wait — would you rather <em>listen</em>?",
+    "lead": "Get the complete audio edition of <em>The Ethiopian Codex</em>: every chapter, narrated, so you can listen while you drive, walk or before you sleep.",
+    "gets": [
+      "Full narrated audiobook (MP3)",
+      "Listen on any device"
+    ],
+    "only_here": "Only available on this page",
+    "price_suffix": "one-time",
+    "yes": "Yes, add the audio edition",
+    "no": "No thanks, I'll just read it",
+    "widget_note": "HOTMART ONE-CLICK WIDGET GOES HERE"
+  },
+  "downsell": {
+    "title": "One more option — The Ethiopian Codex",
+    "confirm": "✅ Your order is confirmed! Check your email for the download link.",
+    "h1": "Just the 30-Day Reading Plan in audio?",
+    "lead": "Thirty short daily readings from the plan in the book, narrated — so you can keep the habit even on busy days.",
+    "gets": [
+      "30 narrated daily readings (MP3)",
+      "Listen on any device"
+    ],
+    "price_suffix": "one-time",
+    "yes": "Yes, add the reading plan audio",
+    "no": "No thanks",
+    "widget_note": "HOTMART ONE-CLICK WIDGET GOES HERE"
+  },
+  "email": {
+    "subject": "Your free preview of The Ethiopian Codex",
+    "preheader": "7 real pages from the book are attached. Here's what's inside, and how to get the full edition.",
+    "h1": "Your free preview is attached",
+    "intro": "Thanks for your interest in <em>The Ethiopian Codex</em>. The PDF attached to this email has 7 real pages from the book:",
+    "inside": [
+      "The cover and the full table of contents",
+      "The opening of Part I — The Book of Enoch",
+      "Two pages from the Enoch chapters",
+      "Two \"Fact or Hype?\" claims, each with its verdict and sources"
+    ],
+    "full_h2": "What the full book adds",
+    "full": "The full edition has {page_count} pages: why the Ethiopian Bible has 81 books, the Book of Enoch, the Book of Jubilees, the books found only in the Ethiopian Bible, all 10 \"Fact or Hype?\" claims, eleven ancient passages printed in full, a 30-day reading plan, a glossary and the full bibliography.",
+    "how_h2": "How to get the full book",
+    "steps": [
+      "Tap the button below. It opens the secure Hotmart checkout.",
+      "Pay once: {price}. No subscription.",
+      "Right after payment, Hotmart emails you the download link. The PDF opens on your phone, tablet or computer."
+    ],
+    "cta": "Get the full book — {price}",
+    "guarantee": "You have a 7-day guarantee: if you feel it wasn't worth it, ask Hotmart for a full refund.",
+    "sign": "Happy reading,",
+    "footer": "You're receiving this because you asked for the free preview at our website. Questions? Just reply to this email. This is an independent educational guide; it is not an official publication of the Ethiopian Orthodox Tewahedo Church or any other church.",
+    "attachment": "the-ethiopian-codex-preview-EN.pdf"
+  }
+}

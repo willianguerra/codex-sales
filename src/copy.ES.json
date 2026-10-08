@@ -1,0 +1,276 @@
+{
+  "lang": "es",
+  "locale": "es_LA",
+  "title": "El Códice Etíope — Los libros que tu Biblia dejó fuera, explicados",
+  "description": "Enoc, Jubileos, Meqabyan y los demás libros de la Biblia etíope, explicados capítulo por capítulo con cada fuente citada. Un e-book de {page_count} páginas hecho para leer en tu celular.",
+  "brand_short": "El Códice Etíope",
+  "lang_label": "Idioma",
+  "hero": {
+    "eyebrow": "El Códice Etíope",
+    "h1_A": [
+      "Los libros que tu Biblia dejó fuera",
+      "— ahora puedes leerlos tú mismo"
+    ],
+    "h1_B": [
+      "Lee el Libro de Enoc",
+      "— explicado, con cada fuente citada"
+    ],
+    "sub": "La Iglesia Ortodoxa Etíope ha conservado libros como Enoc y Jubileos durante siglos. Esta guía los explica capítulo por capítulo, con cada fuente citada, para que veas qué es real y qué es solo exageración de internet.",
+    "ticks": [
+      "Textos reales, explicados de forma sencilla",
+      "Cada fuente citada",
+      "Hecho para leer en tu celular"
+    ],
+    "cover_alt": "Portada de El Códice Etíope en la pantalla de un celular",
+    "cta": "Quiero El Códice Etíope — {price}"
+  },
+  "micro": "🔒 Pago seguro · Descarga inmediata · Garantía de 7 días",
+  "ident": {
+    "h2": "Ya viste los videos. Ahora tienes preguntas.",
+    "roll": "El Libro de Enoc. Los Vigilantes. Los nefilim. Una Biblia con más libros que la tuya.",
+    "intro": "Pero cuando el video termina, quedan dos preguntas:",
+    "q": [
+      "¿Dónde puedo leer esto de verdad?",
+      "¿Y cuánto de esto es cierto?"
+    ],
+    "body": "Mucha gente intenta leer el Libro de Enoc por su cuenta —una traducción antigua, más de 100 capítulos, lenguaje difícil— y se rinde a las pocas páginas.",
+    "turn": "<em>El Códice Etíope</em> fue hecho para que eso no te pase."
+  },
+  "inside": {
+    "h2": "Mira cómo es por dentro",
+    "sub": "Páginas reales del libro. Sin sorpresas.",
+    "label": "Páginas del libro",
+    "prev": "Página anterior",
+    "next": "Página siguiente",
+    "captions": [
+      "La portada",
+      "Cada capítulo empieza con una introducción clara",
+      "Texto antiguo + explicación sencilla + fuente",
+      "Donde el Nuevo Testamento cita a Enoc",
+      "¿Verdad o exageración? — 10 afirmaciones virales, analizadas con fuentes",
+      "Un plan de lectura de 30 días para seguir por tu cuenta"
+    ],
+    "alts": [
+      "Portada: El Códice Etíope",
+      "Página de apertura de la Parte I, El Libro de Enoc",
+      "Una página que cita Hechos 8:27 con su recuadro de fuente",
+      "Una página que compara Judas 1:14 con 1 Enoc 1:9",
+      "¿Verdad o exageración?, afirmación n.º 4 con su sello de veredicto",
+      "Primera página del plan de lectura de 30 días"
+    ],
+    "cta": "Quiero leerlo — {price}"
+  },
+  "proof": {
+    "h2": "¿Sabías que el Nuevo Testamento cita el Libro de Enoc?",
+    "jude_label": "El Nuevo Testamento",
+    "jude": "…también profetizó Enoc, séptimo desde Adam, diciendo: <mark>He aquí</mark>, el Señor es venido <mark>con sus santos</mark> millares…",
+    "jude_cite": "— Judas 1:14 (RV 1909)",
+    "enoch_label": "El Libro de Enoc",
+    "enoch": "¡Y <mark>he aquí</mark>! Viene con diez mil <mark>de sus santos</mark> para ejecutar juicio sobre todos…",
+    "enoch_cite": "— 1 Enoc 1:9 (a partir de la trad. de R. H. Charles, 1917)",
+    "thread": "En griego, los dos pasajes comparten cerca del 72 % de sus palabras",
+    "body": [
+      "Esta profecía coincide de cerca con el primer capítulo del Libro de Enoc, un libro que la mayoría de las Biblias de Occidente no incluye, pero que la Iglesia Ortodoxa Etíope conservó en su Biblia.",
+      "Ese es el tipo de descubrimiento que encontrarás en <em>El Códice Etíope</em>: no rumores, sino textos que puedes comprobar tú mismo."
+    ],
+    "source": "Judas 1:14 (RV 1909) · 1 Enoc 1:9 (a partir de la trad. de R. H. Charles, 1917) · dominio público"
+  },
+  "contents": {
+    "h2": "Qué encontrarás dentro",
+    "lede": "Cinco partes y cuatro apéndices, en el orden en que los vas a leer.",
+    "items": [
+      {
+        "num": "፠",
+        "part": "Apertura",
+        "title": "¿Por qué 81 libros?",
+        "desc": "Cómo se formó la Biblia etíope y por qué tiene más libros que la tuya. «Los 81 libros» es el nombre que la propia Iglesia da a su Biblia, y distintas listas llegan a 81 de maneras distintas."
+      },
+      {
+        "num": "፩",
+        "part": "Parte I",
+        "title": "El Libro de Enoc",
+        "desc": "Los Vigilantes, los nefilim, los siete arcángeles nombrados en el capítulo 20 y los viajes de Enoc por los cielos."
+      },
+      {
+        "num": "፪",
+        "part": "Parte II",
+        "title": "El Libro de los Jubileos",
+        "desc": "El «Pequeño Génesis»: el Génesis contado de nuevo, semana de años por semana de años, y lo que añade a las historias que ya conoces."
+      },
+      {
+        "num": "፫",
+        "part": "Parte III",
+        "title": "Solo en la Biblia etíope",
+        "desc": "Incluidos los tres libros de Meqabyan, que <em>no</em> son los Macabeos que quizá conoces."
+      },
+      {
+        "num": "፬",
+        "part": "Parte IV",
+        "title": "¿Verdad o exageración?",
+        "desc": "10 afirmaciones virales de internet, cada una analizada con fuentes."
+      },
+      {
+        "num": "፭",
+        "part": "Parte V",
+        "title": "Léelo tú mismo",
+        "desc": "Once pasajes completos, traducidos al español a partir de la versión de dominio público de R. H. Charles."
+      },
+      {
+        "num": "A–D",
+        "part": "Apéndices",
+        "title": "Para seguir por tu cuenta",
+        "desc": "Un plan de lectura de 30 días, un glosario, «Ecos en tu Biblia» y la bibliografía completa."
+      }
+    ],
+    "foh_tag": "Parte IV · ¿Verdad o exageración?",
+    "foh_h3": "El capítulo que ningún video te va a dar",
+    "foh_claims": [
+      "Es la Biblia más antigua del mundo.",
+      "Un concilio del año 363 d. C. eliminó estos libros.",
+      "Revela lo que hizo Jesús en los tres días anteriores a la Resurrección."
+    ],
+    "foh_seal_label": "Veredicto dentro del libro",
+    "foh_verdicts_label": "Cada afirmación recibe uno de cinco sellos:",
+    "foh_verdicts": [
+      "Verdadero",
+      "Verdadero, pero…",
+      "Exagerado",
+      "Sin evidencia",
+      "Falso"
+    ],
+    "foh_body": "¿Verdad, exageración o sin ninguna prueba? Revisamos cada afirmación con las fuentes, para que no tengas que adivinar.",
+    "faith": "<strong>Escrito para profundizar tu fe, no para atacarla.</strong> Explicamos lo que dice cada texto, lo que dicen los estudiosos y lo que enseña la tradición etíope, siempre con respeto."
+  },
+  "offer": {
+    "mock_alt": "El Códice Etíope abierto en una tableta y un celular",
+    "h2": "Accede hoy mismo",
+    "gets": [
+      "<em>El Códice Etíope</em> — e-book completo ({page_count} páginas)",
+      "¿Verdad o exageración? — 10 afirmaciones virales analizadas con fuentes",
+      "Once pasajes antiguos completos",
+      "Plan de lectura de 30 días",
+      "Glosario de términos clave",
+      "Bibliografía completa para comprobar cada fuente"
+    ],
+    "once": "Pago único",
+    "compare": "Menos que un almuerzo, y es tuyo para siempre.",
+    "cta": "Quiero El Códice Etíope — {price}",
+    "micro": "🔒 Pago seguro con Hotmart · 📱 PDF, descarga inmediata · Léelo en tu celular, tablet o computadora",
+    "g_seal_top": "7",
+    "g_seal_bottom": "DÍAS",
+    "g_h3": "Garantía de 7 días",
+    "g_body": "Léelo. Si sientes que no valió la pena, pide el reembolso completo dentro de los 7 días. Sin preguntas."
+  },
+  "faq": {
+    "h2": "Preguntas frecuentes",
+    "items": [
+      [
+        "¿Es un libro físico?",
+        "No. Es un e-book digital (PDF). Lo recibes justo después del pago y puedes leerlo en tu celular, tablet o computadora."
+      ],
+      [
+        "¿Esto va a contradecir mi fe?",
+        "No. El libro explica lo que dice cada texto antiguo, lo que dicen los estudiosos y lo que enseña la tradición etíope. Está escrito para ayudarte a entender, no para atacar las creencias de nadie."
+      ],
+      [
+        "¿Necesito saber teología?",
+        "Para nada. Todo está explicado en lenguaje sencillo y los términos difíciles están en el glosario."
+      ],
+      [
+        "¿Es un libro oficial de la Iglesia Etíope?",
+        "No. Es una guía educativa independiente basada en traducciones de dominio público y en estudios publicados, todos citados en la bibliografía."
+      ],
+      [
+        "¿Incluye el texto completo del Libro de Enoc?",
+        "No el libro entero: solo 1 Enoc tiene más de 100 capítulos. Explica los pasajes clave en lenguaje sencillo, incluye once pasajes completos (a partir de la traducción de dominio público de R. H. Charles) y te da un plan de 30 días que te dice exactamente qué capítulos leer."
+      ],
+      [
+        "¿Cómo lo recibo?",
+        "Justo después del pago, recibirás un correo de Hotmart con el enlace de descarga."
+      ],
+      [
+        "¿Y si no me gusta?",
+        "Tienes una garantía de 7 días. Pide el reembolso y te devolvemos tu dinero."
+      ]
+    ],
+    "cta": "Quiero El Códice Etíope — {price}"
+  },
+  "gift": {
+    "h3": "¿Todavía no estás listo? Lee 7 páginas gratis.",
+    "body": "Recibe por correo una muestra gratis de <em>El Códice Etíope</em>: el índice completo, el inicio del Libro de Enoc y dos afirmaciones de «¿Verdad o exageración?» con su veredicto.",
+    "field": "Tu mejor correo",
+    "placeholder": "tu@correo.com",
+    "consent": "Sí, envíenme la muestra gratis y notas ocasionales sobre El Códice Etíope.",
+    "button": "Quiero la muestra gratis",
+    "note": "Sin spam. Puedes darte de baja cuando quieras.",
+    "ok": "¡Revisa tu correo! La muestra va en camino.",
+    "err": "No se pudo enviar. Revisa el correo e inténtalo de nuevo.",
+    "unconfigured": "Este formulario aún no está conectado (email_form.action_url está vacío en config.json)."
+  },
+  "testimonials_h2": "Lo que dicen los lectores",
+  "footer": {
+    "rights": "© {year} {brand_name}. Todos los derechos reservados.",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "contact": "Contacto",
+    "disclaimer": "Esta es una guía educativa independiente basada en traducciones de dominio público de textos antiguos y en estudios publicados. No es una publicación oficial de la Iglesia Ortodoxa Etíope Tewahedo ni de ninguna otra iglesia. Este sitio no está afiliado a YouTube ni a Google."
+  },
+  "bar": {
+    "title": "El Códice Etíope",
+    "cta": "Lo quiero"
+  },
+  "upsell": {
+    "title": "Tu compra está confirmada — El Códice Etíope",
+    "confirm": "✅ ¡Tu compra está confirmada! Revisa tu correo para descargar el libro.",
+    "h1": "Espera… ¿prefieres <em>escucharlo</em>?",
+    "lead": "Llévate la edición en audio completa de <em>El Códice Etíope</em>: cada capítulo narrado, para escucharlo mientras manejas, caminas o antes de dormir.",
+    "gets": [
+      "Audiolibro completo narrado (MP3)",
+      "Escúchalo en cualquier dispositivo"
+    ],
+    "only_here": "Disponible solo en esta página",
+    "price_suffix": "pago único",
+    "yes": "Sí, agregar la edición en audio",
+    "no": "No, gracias, solo quiero leerlo",
+    "widget_note": "AQUÍ VA EL WIDGET DE 1 CLIC DE HOTMART"
+  },
+  "downsell": {
+    "title": "Una opción más — El Códice Etíope",
+    "confirm": "✅ ¡Tu compra está confirmada! Revisa tu correo para descargar el libro.",
+    "h1": "¿Solo el Plan de Lectura de 30 días en audio?",
+    "lead": "Treinta lecturas diarias breves del plan del libro, narradas, para que mantengas el hábito incluso en los días más ocupados.",
+    "gets": [
+      "30 lecturas diarias narradas (MP3)",
+      "Escúchalo en cualquier dispositivo"
+    ],
+    "price_suffix": "pago único",
+    "yes": "Sí, agregar el plan en audio",
+    "no": "No, gracias",
+    "widget_note": "AQUÍ VA EL WIDGET DE 1 CLIC DE HOTMART"
+  },
+  "email": {
+    "subject": "Tu muestra gratis de El Códice Etíope",
+    "preheader": "Adjuntamos 7 páginas reales del libro. Esto es lo que incluyen y cómo conseguir la edición completa.",
+    "h1": "Tu muestra gratis va adjunta",
+    "intro": "Gracias por tu interés en <em>El Códice Etíope</em>. El PDF adjunto a este correo tiene 7 páginas reales del libro:",
+    "inside": [
+      "La portada y el índice completo",
+      "El inicio de la Parte I — El Libro de Enoc",
+      "Dos páginas de los capítulos sobre Enoc",
+      "Dos afirmaciones de «¿Verdad o exageración?», cada una con su veredicto y sus fuentes"
+    ],
+    "full_h2": "Lo que añade el libro completo",
+    "full": "La edición completa tiene {page_count} páginas: por qué la Biblia etíope tiene 81 libros, el Libro de Enoc, el Libro de los Jubileos, los libros que solo están en la Biblia etíope, las 10 afirmaciones de «¿Verdad o exageración?», once pasajes antiguos completos, un plan de lectura de 30 días, un glosario y la bibliografía completa.",
+    "how_h2": "Cómo conseguir el libro completo",
+    "steps": [
+      "Toca el botón de abajo. Se abre el pago seguro de Hotmart.",
+      "Pagas una sola vez: {price}. Sin suscripción.",
+      "Justo después del pago, Hotmart te envía por correo el enlace de descarga. El PDF se abre en tu celular, tablet o computadora."
+    ],
+    "cta": "Quiero el libro completo — {price}",
+    "guarantee": "Tienes una garantía de 7 días: si sientes que no valió la pena, pide a Hotmart el reembolso completo.",
+    "sign": "¡Buena lectura!",
+    "footer": "Recibes este correo porque pediste la muestra gratis en nuestro sitio. ¿Preguntas? Responde a este correo. Esta es una guía educativa independiente; no es una publicación oficial de la Iglesia Ortodoxa Etíope Tewahedo ni de ninguna otra iglesia.",
+    "attachment": "el-codice-etiope-muestra-ES.pdf"
+  }
+}
