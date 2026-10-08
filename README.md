@@ -42,8 +42,8 @@ A função `api/free-preview.js` segue o formato da Vercel (pasta `api/`). As p�
    | Variável | Exemplo |
    |---|---|
    | `RESEND_API_KEY` | `re_...` |
-   | `RESEND_FROM` | `The Ethiopian Codex <codex@ethiopian-codex.com>` |
-   | `RESEND_REPLY_TO` | `suporte@seudominio.com` (opcional) |
+   | `RESEND_FROM` | `The Ethiopian Codex <noreply@ethiopian-codex.com>` |
+   | `RESEND_REPLY_TO` | não usado: o e-mail de prévia sai de `noreply@` (o suporte é `suporte@ethiopian-codex.com`, caixa no Resend) |
    | `RESEND_AUDIENCE_ID_EN` / `RESEND_AUDIENCE_ID_ES` | IDs das audiences (opcional) |
 
 5. Em `config.json`, ajuste `site_url` (o e-mail usa essa URL para mostrar a capa), os links de checkout e o resto das pendências listadas em `qa-report.md`. Rode `python build.py` e publique.
