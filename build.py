@@ -33,6 +33,12 @@ FONTS = (
     f'&display=swap&text={GEEZ_GLYPHS}">'
 )
 
+# Vercel Web Analytics (plain-HTML snippet; the script is served by Vercel at /_vercel/insights/script.js)
+VERCEL_ANALYTICS = (
+    '<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>'
+    '<script defer src="/_vercel/insights/script.js"></script>'
+)
+
 # ---------- original SVG marks ----------
 CROSS = (
     '<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true">'
@@ -152,6 +158,7 @@ def head(lang, t, title, description, page):
 {FONTS}
 <style>{CSS}</style>
 {pixels_head()}
+{VERCEL_ANALYTICS}
 </head>"""
 
 
